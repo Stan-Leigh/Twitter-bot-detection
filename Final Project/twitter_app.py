@@ -21,10 +21,10 @@ username = st.sidebar.text_area("Enter Twitter username without the '@'", twitte
 
 # Get user data using Twitter API
 # keys and token to access the API
-consumer_key = 'ht6VDRc3iZL24LizSl4qswraw'
-consumer_secret = 'kuLSxEd6PUpUKXTAMLPfpRceiiFAp0bWkZFYgSxESVZsKwuOCB'
-access_token = '1039882181106126848-gVOEkEHJcEi11D5TRq61i7ZcgTf5up'
-access_secret = 'MjShTTjfdShU89WUUtYQ4R78vMs8R5qoUG2YK0yXV49R1'
+consumer_key = 'CONSUMER KEY'
+consumer_secret = 'CONSUMER SECRET'
+access_token = 'ACCESS TOKEN'
+access_secret = 'ACCESS SECRET'
 
 # access the API
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
@@ -83,7 +83,6 @@ df['profile_background_image_url'].replace([True, False], [1, 0], inplace=True)
 
 # view the engineered dataframe
 st.write(df)
-
 
 # Reads in saved classification model
 load_clf = pickle.load(open('twitter_clf.pkl', 'rb'))
